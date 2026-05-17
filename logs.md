@@ -15,3 +15,7 @@ I haven't had a ton of time to work on things, but I had enough downtime at work
 Trying to figure out how github work so I can get my first commit on there lol
 6:05 PM 5/15/2026
 Ok I think figured it out, got the generator and the streamer up, probably going to add these logs too for posterity
+6:43 PM 5/15/2026
+Someone dear to me made a very good point: anomalous activity is only anomalous compared against a baseline of unremarkability. So for every malicious log, I should also be generating inconsequential ones. To take it one step further, every log should have an accompanying network group/log. I'm gonna see if I can bang that out before it gets too late. It's been a long ass week
+2:23 PM 5/17/2026
+I've finished with the network companion for the generator, its looking pretty nice. So now using the linux or windows profiles will generate a complete network companion log; two logs, one incident. Additionally, there are now profiles to generate boring, unremarkable logs with authorized logins and normal lateral movement. A normal workday basically. Committing now. 

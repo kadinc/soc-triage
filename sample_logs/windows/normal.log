@@ -1,0 +1,519 @@
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4624</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:00:15.123Z"/>
+    <EventRecordID>45821</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="6428"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="SubjectDomainName">NT AUTHORITY</Data>
+    <Data Name="SubjectLogonId">0x3e7</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="TargetUserName">jsmith</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4f2e8c</Data>
+    <Data Name="LogonType">10</Data>
+    <Data Name="LogonProcessName">Winlogon</Data>
+    <Data Name="AuthenticationPackageName">Negotiate</Data>
+    <Data Name="WorkstationName">WKST-CORP-042</Data>
+    <Data Name="LogonGuid">{a4b2c1d5-e3f4-4a2b-9c8e-7d6f5a4b3c2d}</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x1c0</Data>
+    <Data Name="ProcessName">C:\Windows\System32\svchost.exe</Data>
+    <Data Name="IpAddress">192.168.1.105</Data>
+    <Data Name="IpPort">0</Data>
+    <Data Name="ImpersonationLevel">%%1833</Data>
+    <Data Name="RestrictedAdminMode">-</Data>
+    <Data Name="TargetOutboundUserName">-</Data>
+    <Data Name="TargetOutboundDomainName">-</Data>
+    <Data Name="VirtualAccount">%%1843</Data>
+    <Data Name="TargetLinkedLogonId">0x0</Data>
+    <Data Name="ElevatedToken">%%1842</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-GroupPolicy" Guid="{aea6677b-6c52-450f-8f3f-df4910b51d69}"/>
+    <EventID>1000</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:01:42.456Z"/>
+    <EventRecordID>2341</EventRecordID>
+    <Correlation ActivityID="{b5c3d2e1-a4f5-4c6d-9e8f-7a6b5c4d3e2f}"/>
+    <Execution ProcessID="892" ThreadID="3284"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="PolicyName">Default Domain Policy</Data>
+    <Data Name="PolicyGuid">{31B2F340-016D-11D2-945F-00C04FB984F9}</Data>
+    <Data Name="PolicyScope">Computer</Data>
+    <Data Name="PolicyResult">Applied Successfully</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4688</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12800</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:03:18.789Z"/>
+    <EventRecordID>45822</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="5412"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="SubjectUserName">jsmith</Data>
+    <Data Name="SubjectDomainName">CONTOSO</Data>
+    <Data Name="SubjectLogonId">0x4f2e8c</Data>
+    <Data Name="NewProcessId">0x1a4c</Data>
+    <Data Name="NewProcessName">C:\Program Files\Mozilla Firefox\firefox.exe</Data>
+    <Data Name="TokenElevationType">%%1936</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="ProcessId">0x1a4c</Data>
+    <Data Name="CommandLine">C:\Program Files\Mozilla Firefox\firefox.exe</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="TargetUserName">jsmith</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4f2e8c</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="MandatoryLabel">S-1-16-8192</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4624</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:05:03.234Z"/>
+    <EventRecordID>45823</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="6428"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-051.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="SubjectDomainName">NT AUTHORITY</Data>
+    <Data Name="SubjectLogonId">0x3e7</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1156</Data>
+    <Data Name="TargetUserName">mdavis</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x52a1f4</Data>
+    <Data Name="LogonType">10</Data>
+    <Data Name="LogonProcessName">Winlogon</Data>
+    <Data Name="AuthenticationPackageName">Negotiate</Data>
+    <Data Name="WorkstationName">WKST-CORP-051</Data>
+    <Data Name="LogonGuid">{c6d4e5f2-b3a1-4d5e-8c7f-6a5b4c3d2e1f}</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x1c0</Data>
+    <Data Name="ProcessName">C:\Windows\System32\svchost.exe</Data>
+    <Data Name="IpAddress">192.168.1.118</Data>
+    <Data Name="IpPort">0</Data>
+    <Data Name="ImpersonationLevel">%%1833</Data>
+    <Data Name="RestrictedAdminMode">-</Data>
+    <Data Name="TargetOutboundUserName">-</Data>
+    <Data Name="TargetOutboundDomainName">-</Data>
+    <Data Name="VirtualAccount">%%1843</Data>
+    <Data Name="TargetLinkedLogonId">0x0</Data>
+    <Data Name="ElevatedToken">%%1842</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-TaskScheduler" Guid="{de7b24ea-73c8-4a3d-8747-77aaa2d76a51}"/>
+    <EventID>129</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>100</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x0</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:06:52.567Z"/>
+    <EventRecordID>3847</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="1084" ThreadID="4572"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="TaskName">\Microsoft\Windows\UpdateOrchestrator\Regular Staged Rollout</Data>
+    <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+    <Data Name="ResultCode">0</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4688</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12800</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:07:41.890Z"/>
+    <EventRecordID>45824</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="5412"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-051.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-21-3623811015-3361044348-30300820-1156</Data>
+    <Data Name="SubjectUserName">mdavis</Data>
+    <Data Name="SubjectDomainName">CONTOSO</Data>
+    <Data Name="SubjectLogonId">0x52a1f4</Data>
+    <Data Name="NewProcessId">0x28d4</Data>
+    <Data Name="NewProcessName">C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE</Data>
+    <Data Name="TokenElevationType">%%1936</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="ProcessId">0x28d4</Data>
+    <Data Name="CommandLine">C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1156</Data>
+    <Data Name="TargetUserName">mdavis</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x52a1f4</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="MandatoryLabel">S-1-16-8192</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-GroupPolicy" Guid="{aea6677b-6c52-450f-8f3f-df4910b51d69}"/>
+    <EventID>1001</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:08:19.345Z"/>
+    <EventRecordID>2342</EventRecordID>
+    <Correlation ActivityID="{d6e5f4c3-b2a1-4f6d-8e7c-5a4b3c2d1e0f}"/>
+    <Execution ProcessID="892" ThreadID="3284"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-051.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="PolicyName">Security Policy</Data>
+    <Data Name="PolicyGuid">{6AC1786C-016F-11D2-945F-00C04FB984F9}</Data>
+    <Data Name="PolicyScope">User</Data>
+    <Data Name="PolicyResult">Applied Successfully</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4624</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:10:05.678Z"/>
+    <EventRecordID>45825</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="6428"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-089.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="SubjectDomainName">NT AUTHORITY</Data>
+    <Data Name="SubjectLogonId">0x3e7</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1089</Data>
+    <Data Name="TargetUserName">rjones</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4c7a2e</Data>
+    <Data Name="LogonType">10</Data>
+    <Data Name="LogonProcessName">Winlogon</Data>
+    <Data Name="AuthenticationPackageName">Negotiate</Data>
+    <Data Name="WorkstationName">WKST-CORP-089</Data>
+    <Data Name="LogonGuid">{e7f6a5b4-c3d2-4e1f-7a6c-5b4a3d2e1f0a}</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x1c0</Data>
+    <Data Name="ProcessName">C:\Windows\System32\svchost.exe</Data>
+    <Data Name="IpAddress">192.168.1.142</Data>
+    <Data Name="IpPort">0</Data>
+    <Data Name="ImpersonationLevel">%%1833</Data>
+    <Data Name="RestrictedAdminMode">-</Data>
+    <Data Name="TargetOutboundUserName">-</Data>
+    <Data Name="TargetOutboundDomainName">-</Data>
+    <Data Name="VirtualAccount">%%1843</Data>
+    <Data Name="TargetLinkedLogonId">0x0</Data>
+    <Data Name="ElevatedToken">%%1842</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-WindowsUpdateClient" Guid="{74ec3ceb-3038-46f3-a83e-fe7b7fd6d575}"/>
+    <EventID>19</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x0</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:11:24.901Z"/>
+    <EventRecordID>1234</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="1456" ThreadID="2874"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-089.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="updateTitle">2024-05 Cumulative Update for Windows 10 Version 22H2</Data>
+    <Data Name="updateKB">KB5037776</Data>
+    <Data Name="updateGuid">{12345678-1234-1234-1234-123456789012}</Data>
+    <Data Name="updateRevisionNumber">1</Data>
+    <Data Name="updateResult">Succeeded</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4688</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12800</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:12:47.234Z"/>
+    <EventRecordID>45826</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="5412"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-089.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-21-3623811015-3361044348-30300820-1089</Data>
+    <Data Name="SubjectUserName">rjones</Data>
+    <Data Name="SubjectDomainName">CONTOSO</Data>
+    <Data Name="SubjectLogonId">0x4c7a2e</Data>
+    <Data Name="NewProcessId">0x3f24</Data>
+    <Data Name="NewProcessName">C:\Program Files\Google\Chrome\Application\chrome.exe</Data>
+    <Data Name="TokenElevationType">%%1936</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="ProcessId">0x3f24</Data>
+    <Data Name="CommandLine">C:\Program Files\Google\Chrome\Application\chrome.exe</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1089</Data>
+    <Data Name="TargetUserName">rjones</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4c7a2e</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="MandatoryLabel">S-1-16-8192</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-TaskScheduler" Guid="{de7b24ea-73c8-4a3d-8747-77aaa2d76a51}"/>
+    <EventID>129</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>100</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x0</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:14:15.567Z"/>
+    <EventRecordID>3848</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="1084" ThreadID="4572"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-051.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="TaskName">\Microsoft\Windows\Defrag\ScheduledDefrag</Data>
+    <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+    <Data Name="ResultCode">0</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4624</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:15:52.123Z"/>
+    <EventRecordID>45827</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="6428"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="SubjectDomainName">NT AUTHORITY</Data>
+    <Data Name="SubjectLogonId">0x3e7</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="TargetUserName">jsmith</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4f2e8c</Data>
+    <Data Name="LogonType">7</Data>
+    <Data Name="LogonProcessName">User32</Data>
+    <Data Name="AuthenticationPackageName">Negotiate</Data>
+    <Data Name="WorkstationName">WKST-CORP-042</Data>
+    <Data Name="LogonGuid">{f8a7b6c5-d4e3-4c2b-9a1f-8e7d6c5b4a3d}</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x4a0</Data>
+    <Data Name="ProcessName">C:\Windows\System32\svchost.exe</Data>
+    <Data Name="IpAddress">127.0.0.1</Data>
+    <Data Name="IpPort">0</Data>
+    <Data Name="ImpersonationLevel">%%1833</Data>
+    <Data Name="RestrictedAdminMode">-</Data>
+    <Data Name="TargetOutboundUserName">-</Data>
+    <Data Name="TargetOutboundDomainName">-</Data>
+    <Data Name="VirtualAccount">%%1843</Data>
+    <Data Name="TargetLinkedLogonId">0x0</Data>
+    <Data Name="ElevatedToken">%%1842</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-GroupPolicy" Guid="{aea6677b-6c52-450f-8f3f-df4910b51d69}"/>
+    <EventID>1000</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:17:08.456Z"/>
+    <EventRecordID>2343</EventRecordID>
+    <Correlation ActivityID="{a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d}"/>
+    <Execution ProcessID="892" ThreadID="3284"/>
+    <Channel>System</Channel>
+    <Computer>WKST-CORP-089.contoso.local</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="PolicyName">Domain Controllers Policy</Data>
+    <Data Name="PolicyGuid">{6AC1786C-016F-11D2-945F-00C04FB984F9}</Data>
+    <Data Name="PolicyScope">Computer</Data>
+    <Data Name="PolicyResult">Applied Successfully</Data>
+  </EventData>
+</Event>
+```
+
+```xml
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" EventSourceName="Security"/>
+    <EventID>4688</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12800</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2024-05-14T08:18:33.789Z"/>
+    <EventRecordID>45828</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="572" ThreadID="5412"/>
+    <Channel>Security</Channel>
+    <Computer>WKST-CORP-042.contoso.local</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="SubjectUserName">jsmith</Data>
+    <Data Name="SubjectDomainName">CONTOSO</Data>
+    <Data Name="SubjectLogonId">0x4f2e8c</Data>
+    <Data Name="NewProcessId">0x2c48</Data>
+    <Data Name="NewProcessName">C:\Users\jsmith\AppData\Local\Programs\Microsoft VS Code\Code.exe</Data>
+    <Data Name="TokenElevationType">%%1936</Data>
+    <Data Name="ParentProcessId">0x5e8</Data>
+    <Data Name="ParentProcessName">C:\Windows\explorer.exe</Data>
+    <Data Name="ProcessId">0x2c48</Data>
+    <Data Name="CommandLine">C:\Users\jsmith\AppData\Local\Programs\Microsoft VS Code\Code.exe</Data>
+    <Data Name="TargetUserSid">S-1-5-21-3623811015-3361044348-30300820-1102</Data>
+    <Data Name="TargetUserName">jsmith</Data>
+    <Data Name="TargetDomainName">CONTOSO</Data>
+    <Data Name="TargetLogonId">0x4f2e8c</Data>
+    <Data Name="ParentProcessId">0x
